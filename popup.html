@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Douyin Video Downloader</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+            width: 200px;
+        }
+        button {
+            padding: 10px;
+            font-size: 14px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Douyin Video Downloader</h3>
+    <button id="parseButton">解析当前网页</button>
+    <div id="videoLinkContainer" style="margin-top: 10px; display: none;">
+        <p>视频链接：</p>
+        <ul id="videoLinksList"></ul> <!-- New container for multiple links -->
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
